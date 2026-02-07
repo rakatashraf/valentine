@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভ্যালেন্টাইন প্রেম</title>
+    <link rel="stylesheet" href="valentine.css">
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+
+    <div class="container">
+        <div class="question">
+            তুমি কি আমার হাসিমুখের আবার কারন হবে?
+        </div>
+        <div class="options">
+            <button class="option yes-option" id="yesBtn" onclick="showCongrats()">
+                অবশ্যই আমি শুধু তোমার
+            </button>
+
+            <button class="option no-option" id="noBtn">
+                কখনোই না
+            </button>
+        </div>
+    </div>
+
+    <!-- Congratulations Modal -->
+    <div id="congratsModal" class="modal">
+        <div class="fancy-love-text">I LOVE YOU</div>
+        <div class="envelope">
+            <div class="envelope-wrapper">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body"></div>
+            </div>
+        </div>        <div class="modal-content">
+            <div class="congrats-title">🎉 অভিনন্দন! 💖</div>
+            <div class="congrats-text">
+মুছে ফেল অভিমানের, দাগটি তুমি এবার
+হাসির আলোয় আমায় কর আলোকিত আবার
+দেবোনা জল আসতে চোখে কোন দিনও আর
+আর একটি বার দাও যদি জল মোছার অধিকার
+            </div>
+            <button class="close-btn" onclick="closeCongrats()">ঠিক আছে প্রিয় 💕</button>
+        </div>
+    </div>
+
+    <script src="valentine.js"></script>
+</body>
+</html>
